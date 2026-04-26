@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Rosa de clausura</title>
+  <desc id="desc">Ilustracion botanicamente oscura de una rosa con espina prolongada.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#171210"/>
+      <stop offset="65%" stop-color="#090706"/>
+      <stop offset="100%" stop-color="#15100f"/>
+    </linearGradient>
+    <radialGradient id="roseGlow" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#7e2525" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#7e2525" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".88" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .17 0"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#roseGlow)"/>
+  <rect width="800" height="1000" filter="url(#grain)" opacity=".22"/>
+  <g fill="none" stroke="#eadfce" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M400 188c52 0 96 40 96 93c0 46-33 88-96 140c-63-52-96-94-96-140 0-53 44-93 96-93Z"/>
+    <path d="M400 246c-20-32-50-47-88-47 8 39 28 72 62 101c-31 9-57 30-76 64c39 13 74 10 107-8c-10 43-5 84 17 124c22-40 27-81 17-124c33 18 68 21 107 8c-19-34-45-55-76-64c34-29 54-62 62-101-38 0-68 15-88 47c-6-20-14-36-22-49c-8 13-16 29-22 49Z"/>
+    <path d="M400 385v294"/>
+    <path d="M400 679c-34 64-77 118-130 164"/>
+    <path d="M400 679c34 64 77 118 130 164"/>
+    <path d="M365 472c-26 10-49 28-68 54"/>
+    <path d="M435 472c26 10 49 28 68 54"/>
+    <path d="M344 590c-24 8-45 23-61 44"/>
+    <path d="M456 590c24 8 45 23 61 44"/>
+  </g>
+</svg>

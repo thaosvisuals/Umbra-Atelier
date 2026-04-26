@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umbra Atelier | Estudio de tatuajes</title>
+  <meta
+    name="description"
+    content="Sitio estatico para un estudio de tatuajes con estetica gotica editorial noir y contacto directo por WhatsApp."
+  >
+  <meta name="theme-color" content="#060505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=UnifrakturCook:wght@700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .thaos-return-button {
+      position: fixed;
+      right: clamp(0.7rem, 2.5vw, 1.2rem);
+      bottom: calc(clamp(0.7rem, 2.5vw, 1.2rem) + env(safe-area-inset-bottom, 0px));
+      z-index: 2147483647;
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      min-width: 4.6rem;
+      min-height: 2.4rem;
+      padding: 0.52rem 0.88rem;
+      border: 1px solid rgba(165, 138, 77, 0.68);
+      background: #050505;
+      color: #ffffff;
+      font: 600 0.78rem/1.1 inherit;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.32);
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none;
+      transition: border-color 220ms ease, transform 220ms ease, background-color 220ms ease;
+    }
+
+    .thaos-return-button:hover,
+    .thaos-return-button:focus-visible {
+      border-color: rgba(191, 160, 92, 0.9);
+      background: #0a0a0a;
+      transform: translate3d(0, -1px, 0);
+    }
+
+    .thaos-return-button:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.72);
+      outline-offset: 3px;
+    }
+
+    @keyframes thaos-return-in {
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .thaos-return-button {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="thaos-return-button" href="https://thaosvisuals.github.io/Thaos-Webs/" aria-label="Volver al portfolio principal de THAOS Webs">Volver</a>
+  <div class="page-shell">
+    <div class="site-texture" aria-hidden="true"></div>
+    <div class="ember ember-one" aria-hidden="true"></div>
+    <div class="ember ember-two" aria-hidden="true"></div>
+    <div class="ember ember-three" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Principal">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark">U</span>
+          <span class="brand-copy">
+            <strong>Umbra Atelier</strong>
+            <small>Estudio de tatuajes</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          aria-label="Abrir menu principal"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="nav-panel">
+          <a href="#estudio">Sobre</a>
+          <a href="#lenguajes">Lenguajes</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="hero-kicker">Gothic editorial noir x collage analogico</p>
+            <h1>Umbra</h1>
+            <p class="hero-signature">Tattoo Atelier</p>
+            <p class="hero-manifesto">El cuerpo como archivo. La tinta como memoria.</p>
+            <p class="hero-text">
+              Piezas personalizadas, blackwork ceremonial, botanica nocturna y
+              composiciones de sombra pensadas como una pagina arrancada de una
+              revista de arte oscuro.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                data-wa-link
+                data-message="Hola, quiero consultar por un tatuaje."
+                href="https://wa.me/00000000000?text=Hola%2C%20quiero%20consultar%20por%20un%20tatuaje."
+              >
+                Hablar por WhatsApp
+              </a>
+            </div>
+
+            <div class="hero-meta" aria-label="Datos principales del estudio">
+              <span>Estudio privado</span>
+              <span>Diseno a medida</span>
+              <span>Consulta directa</span>
+            </div>
+          </div>
+
+          <div class="hero-collage reveal">
+            <article class="cover-card">
+              <p class="cover-stamp">Edicion VII</p>
+              <div class="cover-art" aria-hidden="true">
+                <svg class="sigil-art" viewBox="0 0 320 420" fill="none">
+                  <circle cx="160" cy="154" r="104"></circle>
+                  <path d="M74 154c29-42 61-62 86-62s57 20 86 62c-29 42-61 62-86 62s-57-20-86-62Z"></path>
+                  <circle cx="160" cy="154" r="24"></circle>
+                  <path d="M160 258v84"></path>
+                  <path d="M136 311c8-15 15-34 24-69c9 35 16 54 24 69"></path>
+                  <path d="M119 287c-20 16-36 38-47 67"></path>
+                  <path d="M201 287c20 16 36 38 47 67"></path>
+                  <path d="M95 111c11-29 34-55 65-71"></path>
+                  <path d="M225 111c-11-29-34-55-65-71"></path>
+                  <path d="M160 50l9-22 9 22"></path>
+                  <path d="M110 80l-18-14"></path>
+                  <path d="M210 80l18-14"></path>
+                </svg>
+              </div>
+              <div class="cover-copy">
+                <p>Flash selecto</p>
+                <strong>Ritos de tinta</strong>
+                <span>Piezas de sombra, espina y simbolo para lectura lenta.</span>
+              </div>
+            </article>
+
+            <aside class="scrap scrap-top" aria-hidden="true">
+              <span>Lamina 04</span>
+              <strong>Botanica herida</strong>
+              <small>Sombras, grabado, piel.</small>
+            </aside>
+
+            <aside class="scrap scrap-bottom" aria-hidden="true">
+              <span>Nota de taller</span>
+              <strong>Sin plantillas vacias</strong>
+              <small>Cada composicion nace de la conversacion.</small>
+            </aside>
+          </div>
+        </div>
+
+        <a class="hero-scroll" href="#estudio">Explorar el estudio</a>
+      </section>
+
+      <section class="ticker" aria-label="Lenguajes del estudio">
+        <div class="ticker-track">
+          <span>blackwork ceremonial</span>
+          <span>botanica nocturna</span>
+          <span>lettering ritual</span>
+          <span>cobertura selecta</span>
+          <span>piezas personalizadas</span>
+          <span>blackwork ceremonial</span>
+          <span>botanica nocturna</span>
+          <span>lettering ritual</span>
+          <span>cobertura selecta</span>
+          <span>piezas personalizadas</span>
+        </div>
+      </section>
+
+      <section class="section studio" id="estudio">
+        <div class="container studio-grid">
+          <div class="studio-copy reveal">
+            <div class="section-heading">
+              <p class="section-tag">Sobre el estudio</p>
+              <h2>Tatuaje conceptual con pulso oscuro, simbolico y editorial.</h2>
+            </div>
+
+            <span class="studio-rule" aria-hidden="true"></span>
+
+            <p>
+              Umbra trabaja blackwork, composicion simbolica, ornamental sobrio y
+              piezas minimalistas con gesto expresivo. La imagen se piensa con
+              silencio, estructura y peso visual.
+            </p>
+            <p>
+              Cada tatuaje se desarrolla para una piel concreta. Nos interesa una
+              lectura limpia, una escala precisa y una presencia que siga diciendo
+              algo cuando el tiempo pase.
+            </p>
+
+            <div class="studio-facts" aria-label="Enfoque del estudio">
+              <article class="studio-fact">
+                <span>Lenguaje</span>
+                <p>Blackwork, simbolico, ornamental y minimalismo con tension expresiva.</p>
+              </article>
+
+              <article class="studio-fact">
+                <span>Metodo</span>
+                <p>Consulta directa, direccion visual a medida y composicion pensada para durar.</p>
+              </article>
+
+              <article class="studio-fact">
+                <span>Tono</span>
+                <p>Serio, sobrio y lejos de cualquier estetica generica o decorativa vacia.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="studio-collage reveal" aria-hidden="true">
+            <article class="studio-sheet">
+              <span class="studio-sheet-tag">Cuaderno de estudio</span>
+              <div class="studio-etching">
+                <svg viewBox="0 0 260 320" fill="none">
+                  <path d="M130 30c38 0 69 31 69 69c0 30-18 55-69 106c-51-51-69-76-69-106c0-38 31-69 69-69Z"></path>
+                  <path d="M130 83v141"></path>
+                  <path d="M92 131c11-17 24-30 38-40c14 10 27 23 38 40"></path>
+                  <path d="M75 205c18 8 37 12 55 12s37-4 55-12"></path>
+                  <path d="M130 224c-10 20-25 37-45 50"></path>
+                  <path d="M130 224c10 20 25 37 45 50"></path>
+                  <path d="M89 63L67 48"></path>
+                  <path d="M171 63l22-15"></path>
+                  <path d="M130 30V8"></path>
+                </svg>
+              </div>
+              <strong>Una imagen antes que un adorno.</strong>
+              <p>Sombras, vacio y simbolo puestos al servicio de una pieza con lectura propia.</p>
+            </article>
+
+            <aside class="studio-fragment">
+              <span>Registro</span>
+              <strong>Blackwork<br>Simbolo<br>Ornamental</strong>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section languages" id="lenguajes">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Lenguajes</p>
+            <h2>Cuatro direcciones visuales para trabajar piezas con caracter propio.</h2>
+          </div>
+
+          <div class="language-grid">
+            <article class="language-card reveal">
+              <span class="language-index">I</span>
+              <h3>Blackwork ceremonial</h3>
+              <p>
+                Contraste alto, masas de sombra, vacios deliberados y simbolos con
+                presencia grave.
+              </p>
+            </article>
+
+            <article class="language-card reveal">
+              <span class="language-index">II</span>
+              <h3>Botanica nocturna</h3>
+              <p>
+                Rosas heridas, ramas, espinas, semillas y formas organicas tratadas
+                como grabado oscuro.
+              </p>
+            </article>
+
+            <article class="language-card reveal">
+              <span class="language-index">III</span>
+              <h3>Lettering ritual</h3>
+              <p>
+                Frases breves, iniciales, citas y palabras con estructura editorial
+                y pulso historico.
+              </p>
+            </article>
+
+            <article class="language-card reveal">
+              <span class="language-index">IV</span>
+              <h3>Cobertura selecta</h3>
+              <p>
+                Relecturas que reorganizan la piel con nueva composicion, peso y una
+                decision visual mas precisa.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="galeria">
+        <div class="container archive-head">
+          <div class="section-heading reveal">
+            <p class="section-tag">Galeria de trabajos</p>
+            <h2>Un portafolio curado para leer sombra, simbolo y composicion con detalle.</h2>
+          </div>
+
+          <div class="archive-aside reveal">
+            <p>
+              Seleccion de piezas con mirada editorial. Cada imagen funciona como
+              registro de atmosfera, trazo y presencia final sobre la piel.
+            </p>
+          </div>
+        </div>
+
+        <div class="container gallery-grid">
+          <button
+            class="gallery-card reveal"
+            type="button"
+            data-gallery-item
+            data-image="assets/gallery-serpent-veil.svg"
+            data-alt="Pieza blackwork vertical de serpiente ceremonial con halo editorial."
+            data-title="Serpiente de vigilia"
+            data-meta="Blackwork ceremonial"
+            aria-label="Ver detalle de Serpiente de vigilia"
+          >
+            <span class="gallery-frame">
+              <img
+                src="assets/gallery-serpent-veil.svg"
+                alt="Pieza blackwork vertical de serpiente ceremonial con halo editorial."
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="gallery-overlay">
+                <span class="gallery-detail">Ver detalle</span>
+              </span>
+            </span>
+            <span class="gallery-card-copy">
+              <strong>Serpiente de vigilia</strong>
+              <small>Blackwork ceremonial</small>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card reveal"
+            type="button"
+            data-gallery-item
+            data-image="assets/gallery-relic-heart.svg"
+            data-alt="Tatuaje de corazon relicario con estructura simetrica y sombras suaves."
+            data-title="Corazon relicario"
+            data-meta="Simbolico y ornamental"
+            aria-label="Ver detalle de Corazon relicario"
+          >
+            <span class="gallery-frame">
+              <img
+                src="assets/gallery-relic-heart.svg"
+                alt="Tatuaje de corazon relicario con estructura simetrica y sombras suaves."
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="gallery-overlay">
+                <span class="gallery-detail">Ver detalle</span>
+              </span>
+            </span>
+            <span class="gallery-card-copy">
+              <strong>Corazon relicario</strong>
+              <small>Simbolico y ornamental</small>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card reveal"
+            type="button"
+            data-gallery-item
+            data-image="assets/gallery-ash-moth.svg"
+            data-alt="Polilla simetrica de gran formato con contraste oscuro y gesto editorial."
+            data-title="Polilla de ceniza"
+            data-meta="Ornamental de gran formato"
+            aria-label="Ver detalle de Polilla de ceniza"
+          >
+            <span class="gallery-frame">
+              <img
+                src="assets/gallery-ash-moth.svg"
+                alt="Polilla simetrica de gran formato con contraste oscuro y gesto editorial."
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="gallery-overlay">
+                <span class="gallery-detail">Ver detalle</span>
+              </span>
+            </span>
+            <span class="gallery-card-copy">
+              <strong>Polilla de ceniza</strong>
+              <small>Ornamental de gran formato</small>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card reveal"
+            type="button"
+            data-gallery-item
+            data-image="assets/gallery-thorn-rose.svg"
+            data-alt="Rosa oscura con espina prolongada y tratamiento de linea fina."
+            data-title="Rosa de clausura"
+            data-meta="Botanica nocturna"
+            aria-label="Ver detalle de Rosa de clausura"
+          >
+            <span class="gallery-frame">
+              <img
+                src="assets/gallery-thorn-rose.svg"
+                alt="Rosa oscura con espina prolongada y tratamiento de linea fina."
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="gallery-overlay">
+                <span class="gallery-detail">Ver detalle</span>
+              </span>
+            </span>
+            <span class="gallery-card-copy">
+              <strong>Rosa de clausura</strong>
+              <small>Botanica nocturna</small>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card reveal"
+            type="button"
+            data-gallery-item
+            data-image="assets/gallery-sigil-hand.svg"
+            data-alt="Composicion con mano, sigilo y detalles rituales en negro profundo."
+            data-title="Mano de sigilo"
+            data-meta="Conceptual y expresivo"
+            aria-label="Ver detalle de Mano de sigilo"
+          >
+            <span class="gallery-frame">
+              <img
+                src="assets/gallery-sigil-hand.svg"
+                alt="Composicion con mano, sigilo y detalles rituales en negro profundo."
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="gallery-overlay">
+                <span class="gallery-detail">Ver detalle</span>
+              </span>
+            </span>
+            <span class="gallery-card-copy">
+              <strong>Mano de sigilo</strong>
+              <small>Conceptual y expresivo</small>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card reveal"
+            type="button"
+            data-gallery-item
+            data-image="assets/gallery-night-bloom.svg"
+            data-alt="Flor nocturna con geometria leve y lectura minimalista de alto contraste."
+            data-title="Flor de nocturno"
+            data-meta="Minimalismo simbolico"
+            aria-label="Ver detalle de Flor de nocturno"
+          >
+            <span class="gallery-frame">
+              <img
+                src="assets/gallery-night-bloom.svg"
+                alt="Flor nocturna con geometria leve y lectura minimalista de alto contraste."
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="gallery-overlay">
+                <span class="gallery-detail">Ver detalle</span>
+              </span>
+            </span>
+            <span class="gallery-card-copy">
+              <strong>Flor de nocturno</strong>
+              <small>Minimalismo simbolico</small>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section process" id="proceso">
+        <div class="container process-shell">
+          <div class="section-heading reveal">
+            <p class="section-tag">Proceso</p>
+            <h2>Tres pasos sobrios para pasar de una idea a una pieza terminada.</h2>
+          </div>
+
+          <p class="process-intro reveal">
+            Un recorrido simple, directo y cuidado. Sin vueltas innecesarias:
+            conversacion, diseno y sesion.
+          </p>
+
+          <div class="process-grid">
+            <article class="process-card reveal">
+              <span class="process-step">01</span>
+              <span class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="16"></circle>
+                  <path d="M24 8v8"></path>
+                  <path d="M24 32v8"></path>
+                  <path d="M8 24h8"></path>
+                  <path d="M32 24h8"></path>
+                  <circle cx="24" cy="24" r="4" fill="currentColor" stroke="none"></circle>
+                </svg>
+              </span>
+              <h3>Idea</h3>
+              <p>Compartis concepto, zona del cuerpo y referencias para definir direccion.</p>
+            </article>
+
+            <article class="process-card reveal">
+              <span class="process-step">02</span>
+              <span class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <rect x="11" y="11" width="26" height="26" rx="6"></rect>
+                  <path d="M16 24h16"></path>
+                  <path d="M24 16v16"></path>
+                  <circle cx="24" cy="24" r="3" fill="currentColor" stroke="none"></circle>
+                </svg>
+              </span>
+              <h3>Diseno</h3>
+              <p>Se construye una propuesta a medida con escala, ritmo y lectura clara.</p>
+            </article>
+
+            <article class="process-card reveal">
+              <span class="process-step">03</span>
+              <span class="process-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M31 9l8 8"></path>
+                  <path d="M20 28L35 13"></path>
+                  <path d="M17 31l-8 8"></path>
+                  <path d="M18 30l4 4"></path>
+                  <path d="M11 38l-2 2"></path>
+                  <path d="M27 21l10 10"></path>
+                </svg>
+              </span>
+              <h3>Tatuaje</h3>
+              <p>La sesion se realiza con calma, precision y foco en la presencia final.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Preguntas</p>
+            <h2>Informacion util antes de coordinar una pieza.</h2>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item reveal is-open">
+              <button
+                class="faq-trigger"
+                type="button"
+                aria-expanded="true"
+                aria-controls="faq-panel-1"
+              >
+                <span>Trabajan solo disenos personalizados?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-panel" id="faq-panel-1">
+                <p>
+                  Si. El estudio trabaja piezas pensadas para cada cuerpo e idea.
+                  El archivo funciona como lenguaje y punto de partida, no como plantilla rigida.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button
+                class="faq-trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-panel-2"
+              >
+                <span>Que datos conviene mandar en el primer mensaje?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-panel" id="faq-panel-2">
+                <p>
+                  Idea, zona del cuerpo, tamano aproximado, referencias visuales y
+                  si la pieza es nueva o una cobertura. Con eso la respuesta es mucho mas precisa.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button
+                class="faq-trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-panel-3"
+              >
+                <span>Realizan coberturas o relecturas de tatuajes viejos?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-panel" id="faq-panel-3">
+                <p>
+                  Si, siempre que la pieza anterior permita una nueva composicion clara.
+                  Para evaluarlo conviene enviar fotos nitidas y con buena luz.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item reveal">
+              <button
+                class="faq-trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="faq-panel-4"
+              >
+                <span>Hay agenda online o formulario interno?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-panel" id="faq-panel-4">
+                <p>
+                  No. Toda la consulta y coordinacion se hace de forma directa por
+                  WhatsApp para mantener un intercambio simple, humano y enfocado.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <div class="container">
+          <div class="contact-shell reveal">
+            <p class="section-tag">Contacto</p>
+            <h2>Conta tu idea. La convertimos en tinta.</h2>
+            <p class="contact-lead">El unico canal de contacto es WhatsApp.</p>
+            <div class="contact-actions contact-actions-centered">
+              <a
+                class="button button-primary contact-primary"
+                data-wa-link
+                data-message="Hola, quiero consultar por un tatuaje."
+                href="https://wa.me/00000000000?text=Hola%2C%20quiero%20consultar%20por%20un%20tatuaje."
+              >
+                Hablar por WhatsApp
+              </a>
+            </div>
+
+            <div class="contact-number-block">
+              <span class="contact-number-label">WhatsApp directo</span>
+              <span class="contact-number">
+                +00 000 000 0000
+              </span>
+            </div>
+
+            <p class="contact-note">Sin formularios, sin agenda online, sin intermediarios.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p class="footer-name">Umbra Atelier</p>
+        <div class="footer-links" aria-label="Enlaces del estudio">
+          <span>Instagram demo: @estudio_portafolio_demo</span>
+          <span>WhatsApp: +00 000 000 0000</span>
+          <span>Montevideo</span>
+        </div>
+      </div>
+      <p class="footer-demo">
+        Esta pagina es un ejemplo de diseno para portafolio. No corresponde a un estudio real.
+      </p>
+    </footer>
+
+    <div class="gallery-modal" data-gallery-modal hidden>
+      <button
+        class="gallery-modal-backdrop"
+        type="button"
+        data-gallery-close
+        aria-label="Cerrar detalle"
+      ></button>
+      <div
+        class="gallery-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="gallery-modal-title"
+      >
+        <button
+          class="gallery-modal-close"
+          type="button"
+          data-gallery-close
+          aria-label="Cerrar detalle"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <figure class="gallery-modal-figure">
+          <img
+            class="gallery-modal-image"
+            data-gallery-modal-image
+            src=""
+            alt=""
+          >
+          <figcaption class="gallery-modal-caption">
+            <strong id="gallery-modal-title" data-gallery-modal-title></strong>
+            <span data-gallery-modal-meta></span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <a
+      class="floating-wa"
+      data-wa-link
+      data-message="Hola, quiero consultar por un tatuaje."
+      href="https://wa.me/00000000000?text=Hola%2C%20quiero%20consultar%20por%20un%20tatuaje."
+      aria-label="Hablar por WhatsApp"
+    >
+      WA
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Serpiente de vigilia</title>
+  <desc id="desc">Ilustracion oscura de una serpiente ceremonial con halo editorial.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161210"/>
+      <stop offset="55%" stop-color="#090807"/>
+      <stop offset="100%" stop-color="#1f1815"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="26%" r="44%">
+      <stop offset="0%" stop-color="#8f6d49" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#8f6d49" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .18 0"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+  <rect width="800" height="1000" filter="url(#grain)" opacity=".22"/>
+  <g fill="none" stroke="#6a5238" stroke-opacity=".28">
+    <rect x="52" y="52" width="696" height="896" rx="22"/>
+    <rect x="84" y="84" width="632" height="832" rx="16"/>
+    <path d="M134 164h532"/>
+    <path d="M134 836h532"/>
+  </g>
+  <g fill="none" stroke="#eadfce" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="400" cy="286" r="170" opacity=".3"/>
+    <circle cx="400" cy="286" r="88" opacity=".32"/>
+    <path d="M421 102c18-34 44-58 80-74"/>
+    <path d="M379 102c-18-34-44-58-80-74"/>
+    <path d="M400 126v-60"/>
+    <path d="M347 243c42-56 90-86 138-86 54 0 104 36 104 108 0 54-26 98-92 155-54 48-74 77-74 117 0 44 28 79 70 96"/>
+    <path d="M455 255c-18-18-35-26-56-26-40 0-67 29-67 68 0 38 26 70 72 108 50 42 67 69 67 106 0 32-16 57-45 76"/>
+    <path d="M370 703c-36 37-54 71-54 116 0 67 54 111 123 111 68 0 117-42 123-109"/>
+    <path d="M359 862c25 18 53 26 82 26 54 0 101-26 125-70"/>
+    <path d="M296 578c26 20 56 30 90 30 20 0 39-3 57-9"/>
+    <path d="M505 640c22 18 41 40 55 67"/>
+    <path d="M279 707c12-19 29-38 51-55"/>
+    <circle cx="522" cy="376" r="11" fill="#eadfce"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Flor de nocturno</title>
+  <desc id="desc">Ilustracion minimalista de una flor nocturna simbolica.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15100f"/>
+      <stop offset="60%" stop-color="#080706"/>
+      <stop offset="100%" stop-color="#17110f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="44%">
+      <stop offset="0%" stop-color="#8f6d49" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#8f6d49" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .16 0"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+  <rect width="800" height="1000" filter="url(#grain)" opacity=".2"/>
+  <g fill="none" stroke="#eadfce" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M400 208c36-74 96-112 177-110-12 57-44 101-105 131 49 12 87 43 108 93-61 19-113 14-164-17 10 61 3 118-21 173-24-55-31-112-21-173-51 31-103 36-164 17 21-50 59-81 108-93-61-30-93-74-105-131 81-2 141 36 177 110 6-22 14-41 26-61c12 20 20 39 26 61Z"/>
+    <path d="M400 317v250"/>
+    <path d="M400 567c-20 45-49 84-86 117"/>
+    <path d="M400 567c20 45 49 84 86 117"/>
+    <path d="M330 666c-24 11-44 28-60 51"/>
+    <path d="M470 666c24 11 44 28 60 51"/>
+    <path d="M400 168v-56"/>
+    <circle cx="400" cy="317" r="19" fill="#eadfce"/>
+  </g>
+</svg>

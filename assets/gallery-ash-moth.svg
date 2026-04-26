@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Polilla de ceniza</title>
+  <desc id="desc">Ilustracion simetrica de polilla ritual con acabado oscuro.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161211"/>
+      <stop offset="55%" stop-color="#080706"/>
+      <stop offset="100%" stop-color="#191310"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="28%" r="42%">
+      <stop offset="0%" stop-color="#a5835c" stop-opacity=".24"/>
+      <stop offset="100%" stop-color="#a5835c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".86" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .16 0"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+  <rect width="800" height="1000" filter="url(#grain)" opacity=".2"/>
+  <g fill="none" stroke="#eadfce" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M400 250c48-101 130-153 245-148-22 78-69 142-163 185 74 16 131 60 163 132-92 27-169 18-245-30 18 82 8 159-33 235-41-76-51-153-33-235-76 48-153 57-245 30 32-72 89-116 163-132-94-43-141-107-163-185 115-5 197 47 245 148 10-36 29-77 33-112 4 35 23 76 33 112Z"/>
+    <path d="M400 285v273"/>
+    <path d="M400 558c-27 49-65 89-114 120"/>
+    <path d="M400 558c27 49 65 89 114 120"/>
+    <path d="M256 363c38 6 78 26 112 58"/>
+    <path d="M544 363c-38 6-78 26-112 58"/>
+    <circle cx="400" cy="244" r="24" fill="#eadfce"/>
+    <path d="M368 154c10-28 20-54 32-78c12 24 22 50 32 78"/>
+  </g>
+</svg>
